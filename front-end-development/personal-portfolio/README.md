@@ -1,8 +1,8 @@
+# Front End Development Certification
 
-# Basic Front End Development Project
+Collection of my Front End Development projects for freeCodeCamp.
 
-This is my finished project for the challenge.
+## Basic Front End Development Project
 
-## Details
-
-Build a Personal Portfolio Page | [Requirements](http://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage) | Demo | [Source Code](https://github.com/febreroinfo/freeCodeCamp-projects/tree/gh-pages/front-end-development/personal-portfolio)
+- Build a Tribute Page | [Requirements](http://www.freecodecamp.com/challenges/build-a-tribute-page) | Demo | [Source Code](https://github.com/febreroinfo/freeCodeCamp-projects/tree/gh-pages/front-end-development/tribute-page)
+- Build a Personal Portfolio Page | [Requirements](http://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage) | Demo | [Source Code](https://github.com/febreroinfo/freeCodeCamp-projects/tree/gh-pages/front-end-development/personal-portfolio)
