@@ -1,0 +1,749 @@
+/*!
+ * Buide a Tribute Page - Free Code Camp Project
+ * Jose Febrero - http://febrero.info
+ * Copyright 2018
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+/* Anchor Links */
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none !important;
+}
+
+a.link-color {
+    color: #a37e4f;
+}
+
+a.link-color:hover {
+    color: #cb9e63;
+}
+
+a.link-color:focus {
+    color: #d0a873;
+}
+
+a.link-home {
+    color: #868e96;
+}
+
+a.link-home:hover {
+    color: #d0a873;
+}
+
+a.link-home:focus {
+    color: #868e96;
+}
+
+/* Back to Top*/
+
+#uptop {
+    background-color: #292b2c;
+    bottom: 10px;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    width: 50px;
+    z-index: 1;
+}
+
+#uptop span {
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 1em;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 1em;
+}
+
+#uptop:hover {
+    background-color: #cb9e63;
+}
+
+#uptop.show {
+    opacity: 1;
+}
+
+/* Background Color */
+
+.bg-color {
+    background-color: #e5e5e5;
+}
+
+/* Background Images */
+
+#main {
+    background-image: url("../img/rizal_lg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#media {
+    background-attachment: fixed;
+    background-image: url("../img/rizal_mn.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#sources {
+    background-attachment: fixed;
+    background-image: url("../img/rizal_ft.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Background Image Overlay */
+
+.overlay {
+    background-color: #e5e5e5;
+    background-color: rgba(229, 229, 229, 0.6);
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+/* Custom Padding */
+
+article {
+    padding: 15px 0;
+}
+
+.m-tb {
+    margin: 15px 0;
+}
+
+.p-b {
+    padding-bottom: 0;
+}
+
+.p-tb {
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+
+.btn-set li {
+    margin-bottom: 1em !important;
+    padding: 0 .5em;
+}
+
+/* Line */
+
+h5.line {
+    overflow: hidden;
+    text-align: center;
+}
+
+h5.line:before,
+h5.line:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h5.line:before {
+    margin-left: -50%;
+    right: 0.5em;
+}
+
+h5.line:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* Header Text Styles */
+
+.heavy {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.light {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.btn {
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.btn {
+    border-radius: 0 !important;
+    padding: 1rem 2rem !important;
+}
+
+.btn:focus {
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn-fw {
+    width: 142px;
+}
+
+.btn-main {
+    background-color: #292b2c;
+    border: 1px solid #292b2c;
+    color: #ffffff;
+}
+
+.btn-main:hover {
+    background-color: transparent;
+    border: 1px solid #474747;
+    color: #292b2c;
+}
+
+.btn-main:focus {
+    background-color: transparent;
+    border: 1px solid #474747;
+    color: #292b2c;
+}
+
+.btn-source {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #292b2c;
+}
+
+.btn-source:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-source:focus {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-action {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+    color: #ffffff;
+}
+
+.btn-action:hover {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+    color: #292b2c;
+}
+
+.btn-action:focus {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+    color: #292b2c;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: auto;
+}
+
+/* Literature Overlay */
+
+.containerfade {
+    margin: auto;
+    position: relative;
+}
+
+.containerfade:hover .overlayfade {
+    opacity: 1;
+}
+
+.overlayfade {
+    background-color: #101010;
+    background-color: rgba(16, 16, 16, 0.8);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    width: 100%;
+}
+
+.textfade {
+    color: white;
+    font-size: 20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+.imagefade {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.text a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Image in Square */
+
+.square {
+    height: 0;
+    overflow: hidden;
+    padding: 50%;
+    width: 50%;
+}
+
+.square img {
+    bottom: -100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: -100%;
+}
+
+.p-all {
+    padding: 15px;
+}
+
+/* Modal */
+
+body,
+.modal-open,
+.fadeIn {
+    padding-right: 0 !important;
+    /* Bootstrap Modal Padding Override */
+}
+
+.literature-modal .modal-dialog {
+    height: 100%;
+    margin: 0;
+    max-width: none;
+}
+
+.literature-modal .modal-content {
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+    -ms-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.literature-modal .modal-content h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.literature-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.literature-modal .modal-content p.item-intro {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 20px 0 30px;
+}
+
+.literature-modal .modal-content ul.list-inline {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.literature-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.literature-modal .modal-content button {
+    cursor: pointer;
+}
+
+.literature-modal .close-modal {
+    background-color: transparent;
+    cursor: pointer;
+    height: 75px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 75px;
+}
+
+.literature-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.literature-modal .close-modal .lr {
+    background-color: #222222;
+    height: 75px;
+    margin-left: 35px;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 1px;
+    z-index: 1051;
+}
+
+.literature-modal .close-modal .lr .rl {
+    background-color: #222222;
+    height: 75px;
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 1px;
+    z-index: 1052;
+}
+
+.literature-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.img-fw {
+    height: auto;
+    width: 300px;
+}
+
+/* Footer */
+
+.footer-down {
+    background-color: #f7f7f7;
+    font-size: .9em;
+    padding: 1.5rem 0;
+}
+
+/* Responsive Video Embed */
+
+.embed-container {
+    height: 0;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* === Element Animation Effect === */
+
+.animated {
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -ms-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -ms-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/* === Responsive Breakpoint === */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+    .btn-set li {
+        display: block;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+    .isolate {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3.9rem;
+    }
+
+    .empasize {
+        padding-bottom: 1rem;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+    /* Hide header background and overlay in mobile devices */
+    header #main {
+        background-image: none;
+        display: block;
+    }
+
+    header .overlay {
+        background-color: #ffffff;
+        display: block;
+    }
+
+    .p-t {
+        padding-top: 40px;
+    }
+
+    .btn-set li {
+        display: block;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+    .isolate {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+}
+
+/*Medium devices (tablets, less than 992px*/
+
+@media (max-width: 991px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+}
+
+
+/* Turns Off Parallax Scrolling For Mobile Devices */
+
+@media only screen and (max-device-width: 1024px) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+    #media {
+        background-attachment: scroll;
+    }
+
+    #sources {
+        background-attachment: scroll;
+    }
+
+}
+
+/* iPhone X */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+    body {
+        transition: all .2s linear;
+        -o-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+    }
+
+    /* hide header background and overlay in xs mobile devices */
+    header #main {
+        background-image: none;
+        display: block;
+    }
+
+    header .overlay {
+        background-color: #ffffff;
+        display: block;
+    }
+
+    .isolate {
+        height: 100%;
+    }
+
+    .d-md-none {
+        display: block !important;
+    }
+
+    .p-t {
+        padding-top: 40px;
+    }
+
+}

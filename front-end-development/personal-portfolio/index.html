@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free Code Camp Project | Personal Portfolio">
+	<meta name="author" content="Jose Febrero">
+
+	<title>Portfolio | Jose Febrero </title>
+
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="194x194" href="icon/favicon-194x194.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="icon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#555555">
+	<meta name="apple-mobile-web-app-title" content="Febrero">
+	<meta name="application-name" content="Febrero">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" content="icon/mstile-144x144.png">
+	<meta name="theme-color" content="#000000">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+	<!-- Custom styles for this project -->
+	<link href="./css/portfolio.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this project -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:200,500,900|Montserrat:200,500,900" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+
+<body id="top">
+
+	<!-- Back to Top -->
+	<a href="#" id="uptop" title="Scroll to Top">
+		<span>
+			<h2 class="invisible">Top</h2>
+		</span>
+    </a>
+
+	<!-- Navigation -->
+	<nav id="mainnav" class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+			<a href="#top" class="navbar-brand page-scroll">
+				<h2 class="text-logo mb-0">Febrero</h2>
+			</a>
+			<div class="navmenu">
+				<div class="collapse navbar-collapse" id="mainmenu">
+					<ul class="navbar-nav ml-auto">
+						<a class="menu-brand page-scroll" href="#top">
+							<div class="logo md d-lg-none"></div>
+							<span class="navmenu-logo one">Jose</span>
+							<span class="navmenu-logo two">Febrero</span>
+						</a>
+						<hr class="mt-1 mb-1">
+						<li class="nav-item">
+							<a href="#projects" class="nav-link page-scroll">
+							<i class="far fa-folder-open fa-fw d-lg-none"></i>
+								<span class="gap"> Projects</span>
+                            </a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link page-scroll">
+							<i class="far fa-address-card fa-fw d-lg-none"></i>
+								<span class="gap">About</span>
+                            </a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link page-scroll">
+							<i class="far fa-edit fa-fw d-lg-none"></i>
+								<span class="gap">Contact</span>
+                            </a>
+						</li>
+					</ul>
+					<div class="d-lg-none">
+						<hr class="mt-0" />
+						<div class="follow">
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item">
+									<a href="https://www.freecodecamp.org/febreroinfo" target="_blank" data-placement="top" data-toggle="tooltip" title data-original-title="Free Code Camp">
+								<i class="fab fa-free-code-camp fa-fw fa-lg" aria-hidden="true"></i>
+							</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://codepen.io/febreroinfo" target="_blank" data-placement="top" data-toggle="tooltip" title data-original-title="Codepen">
+								<i class="fab fa-codepen fa-fw fa-lg" aria-hidden="true"></i>
+							</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://github.com/febreroinfo" target="_blank" data-placement="top" data-toggle="tooltip" title data-original-title="Github">
+								<i class="fab fa-github fa-fw fa-lg" aria-hidden="true"></i>
+							</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<div id="introduction" class="bg-image-1">
+			<div class="overlay isolate">
+				<div id="introduction-details" class="text-center text-white">
+					<div class="container">
+						<p><span class="light">Hi, I'm</span></p>
+						<h2 class="heavy">Jose Febrero</h2>
+						<p><span class="light">
+							I'm passionate about making web things.
+							</span>
+						</p>
+						<div class="">
+							<a href="#projects" class="btn btn-main page-scroll">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Content -->
+	<main>
+		<!-- Projects -->
+		<article>
+			<div id="projects" class="container">
+				<div id="project-details" class="text-center">
+					<h2 class="mb-4"><span>Recent Projects</span></h2>
+					<p>More upcoming projects will be posted as I go through the Free Code Camp online course. Stay tune</p>
+					<div id="gallery" class="row text-center">
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="containerfade square">
+								<img src="./img/fcc-fe-p-01.png" alt="Challenge #1" class="imagefade">
+								<div class="overlayfade">
+									<div class="project-pane">
+										<a href="#tributeModal" target="_blank" data-toggle="modal" data-placement="auto" class='btn btn-project'>
+											<i class="fas fa-external-link-alt fa-fw"></i>
+											<span>Details</span>
+										</a>
+									</div>
+									<div class="project-info text-center">
+										<h5>Tribute</h5>
+										<p><span class="text-muted">HTML5, CSS3, JQuery, Bootstrap, SVG, and CSS Animation</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="containerfade square">
+								<img src="./img/fcc-fe-p-02.png" alt="Challenge #2" class="imagefade">
+								<div class="overlayfade">
+									<div class="project-pane">
+										<a href="#portfolioModal" target="_blank" data-toggle="modal" data-placement="auto" class='btn btn-project'>
+											<i class="fas fa-external-link-alt fa-fw"></i>
+											<span>Details</span>
+										</a>
+									</div>
+									<div class="project-info text-center">
+										<h5>Portfolio</h5>
+										<p><span class="text-muted">HTML5, CSS3, JQuery, Bootstrap, SVG, and CSS Animation</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="containerfade square">
+								<img src="https://unsplash.it/1920/1080?image=1051" alt="Project #" class="imagefade blur">
+								<div class="overlayfade">
+									<div class="project-pane">
+										<a href="#literatureModal1" target="_blank" data-toggle="modal" data-placement="auto" class='btn btn-project'>
+											<i class="fas fa-external-link-alt fa-fw"></i>
+											<span>Details</span>
+										</a>
+									</div>
+									<div class="project-info text-center">
+										<h5>Coming Soon</h5>
+										<p><span class="text-muted">#freecodecamp</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="containerfade square">
+								<img src="https://unsplash.it/1920/1080?image=1051" alt="Project #" class="imagefade blur">
+								<div class="overlayfade">
+									<div class="project-pane">
+										<a href="#literatureModal1" target="_blank" data-toggle="modal" data-placement="auto" class='btn btn-project'>
+											<i class="fas fa-external-link-alt fa-fw"></i>
+											<span>Details</span>
+										</a>
+									</div>
+									<div class="project-info text-center">
+										<h5>Coming Soon</h5>
+										<p><span class="text-muted">#freecodecamp</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="containerfade square">
+								<img src="https://unsplash.it/1920/1080?image=1051" alt="Project #" class="imagefade blur">
+								<div class="overlayfade">
+									<div class="project-pane">
+										<a href="#literatureModal1" target="_blank" data-toggle="modal" data-placement="auto" class='btn btn-project'>
+											<i class="fas fa-external-link-alt fa-fw"></i>
+											<span>Details</span>
+										</a>
+									</div>
+									<div class="project-info text-center">
+										<h5>Coming Soon</h5>
+										<p><span class="text-muted">#freecodecamp</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="containerfade square">
+								<img src="https://unsplash.it/1920/1080?image=1051" alt="Project #" class="imagefade blur">
+								<div class="overlayfade">
+									<div class="project-pane">
+										<a href="#literatureModal1" target="_blank" data-toggle="modal" data-placement="auto" class='btn btn-project'>
+											<i class="fas fa-external-link-alt fa-fw"></i>
+											<span>Details</span>
+										</a>
+									</div>
+									<div class="project-info text-center">
+										<h5>Coming Soon</h5>
+										<p><span class="text-muted">#freecodecamp</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- About -->
+		<article class="bg-image-2">
+			<div id="about" class="overlay">
+				<div id="about-details" class="text-white">
+					<div class="container">
+					<div class="row">
+						<div class="col-lg-6 text-justify vertical-align">
+							<h2 class="text-center mb-4">About</h2>
+							<p>Aspiring web developer with an eye for UX/UI design and development. Always looking to learn, create, explore new ideas, and technologies. Currently learning front-end development and design on Free Code Camp with the goal of becoming a self-taught full stack developer.</p>
+							<p>Whenever, I'm not coding I'm taking photos, riding my bike, and watching videos about various topics.</p>
+						</div>
+						<div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-lg-block">
+						    <div class="logo lg white m-auto"></div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- Skills -->
+		<article class="bg-gradient">
+			<div id="skills" class="container">
+				<div id="skills-details" class="text-white">
+					<h2 class="text-center mb-4">Skills</h2>
+					<div class="row m-auto">
+						<div class="col-md-6 col-lg-6">
+							<p class="font-weight-bold">The scope of my skills and experience is a large part of front end development:</p>
+							<p>HTML5, CSS3, JavaScript, JavaScript Libraries, CSS Frameworks, Version Control, Web Performance, Browser Development Tools</p>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<p class="font-weight-bold">Below are some of the proficient areas I can provide:</p>
+							<ul class="list-unstyled">
+								<li>UX & UI design</li>
+								<li>Wireframing, Rapid Prototyping, & Mockups</li>
+								<li>Web Design & Development</li>
+								<li>Mobile first & Responsive Web Design</li>
+								<li>Logo, Graphic design, & Vector images</li>
+								<li>Newsletter Layout</li>
+								<li>O365 Sharepoint</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- Contact -->
+		<article class="bg-01">
+			<div id="contact" class="container">
+				<div id="contact-details" class="text-justify">
+					<h2 class="text-center mb-4">Get in Touch</h2>
+					<p class="text-center">Want to work together? Want to get in touch with me? Feel free to drop me a line anytime.</p>
+					<form role="form" action="contact.php" method="post">
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<label class="sr-only" for="contact-name">Name</label>
+									<input type="text" name="name" placeholder="Full Name" class="contact-name" id="name" required>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="contact-email">Email</label>
+									<input type="email" name="email" placeholder="Email" class="contact-email" id="contact-email" required>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="contact-subject">Subject</label>
+									<input type="text" name="subject" placeholder="Subject" class="contact-subject" id="contact-subject" required>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col">
+								<div class="form-group">
+									<label class="sr-only" for="contact-message">Message</label>
+									<textarea name="message" placeholder="Message" class="contact-message" id="contact-message" required></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button type="submit" class="btn btn-action">
+								Send Message
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer-down bg-02">
+		<div class="container">
+			<div id="footer-details">
+				<div class="row m-auto">
+					<div class="col-lg-6 order-lg-2">
+						<div class="bottom">
+							<div class="social">
+								<ul class="list-unstyled list-inline">
+									<li class="list-inline-item">
+										<a href="https://www.freecodecamp.org/febreroinfo" target="_blank" data-placement="top" data-toggle="tooltip" title data-original-title="Free Code Camp">
+										<i class="fab fa-free-code-camp fa-fw fa-lg" aria-hidden="true"></i>
+									</a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://codepen.io/febreroinfo" target="_blank" data-placement="top" data-toggle="tooltip" title data-original-title="Codepen">
+										<i class="fab fa-codepen fa-fw fa-lg" aria-hidden="true"></i>
+									</a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://github.com/febreroinfo" target="_blank" data-placement="top" data-toggle="tooltip" title data-original-title="Github">
+										<i class="fab fa-github fa-fw fa-lg" aria-hidden="true"></i>
+									</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 order-lg-1 l-h">
+						<div class="text-white">
+							<span class="text-uppercase">© <span id="year"></span> <a href="http://febrero.info" class="text-white" target="_blank">Febrero</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Project Modal -->
+
+	<!-- Tribute  -->
+	<div class="project-modal modal animated fadeIn" id="tributeModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Tribute</h2>
+								<p class="text-muted font-italic">Build a Tribute Page</p>
+								<img class="img-fluid" src="./img/fcc-fe-p-01.png" alt="Tribute Page">
+								<div class="project-links">
+									<ul class="list-unstyled list-inline">
+										<li class="list-inline-item m-auto">
+											<a href="https://codepen.io/febrero/full/Ppxwqa/" target="_blank" class='btn btn-action btn-full'>
+                                            <i class="fab fa-codepen fa-fw"></i> Demo
+                                            </a>
+										</li>
+										<li class="list-inline-item">
+											<a href="https://www.freecodecamp.org/febreroinfo" target="_blank" class='btn btn-action btn-full'>
+                                            <i class="fab fa-github fa-fw"></i> Code
+                                            </a>
+										</li>
+									</ul>
+								</div>
+								<p>This project is the first challenge that was provided during the the Free Code Camp Frond-End Development curriculum.</p>
+								<div class="user-story">
+									<ol class="text-justify">
+										<li>
+											<p><strong>Objective:</strong> Build a <a href="https://codepen.io/" target="_blank">CodePen.io</a> app that is functionally similar to this: <a href="https://codepen.io/FreeCodeCamp/full/NNvBQW/" target="_blank" class="wrap">https://codepen.io/FreeCodeCamp/full/NNvBQW/</a>.</p>
+										</li>
+										<li>
+											<p>Fulfill the below <a href="https://en.wikipedia.org/wiki/User_story" target="_blank">user stories</a>. Use whichever libraries you need. Give it your own personal style.</p>
+										</li>
+										<li>
+											<p><strong>User Story:</strong> I can view a tribute page with an image and text.</p>
+										</li>
+										<li>
+											<p><strong>User Story:</strong> I can click on a link that will take me to an external website with further information on the topic.</p>
+										</li>
+										<li>
+											<p>Remember to use <a href="https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514" target="_blank">Read-Search-Ask</a> if you get stuck.</p>
+										</li>
+										<li>
+											<p>When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.</p>
+										</li>
+										<li>
+											<p>You can get feedback on your project by sharing it with your friends on Facebook.</p>
+										</li>
+									</ol>
+								</div>
+								<div>
+									<p><strong>Want to know more?</strong><a href="https://www.freecodecamp.org/challenges/build-a-tribute-page" target="_blank"> Click here to read more...</a></p>
+									<div>
+										<button type="button" class="btn btn-action" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portfolio -->
+	<div class="project-modal modal animated fadeIn" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Portfolio</h2>
+								<p class="text-muted font-italic">Build a Personal Portfolio Webpage</p>
+								<img class="img-fluid" src="./img/fcc-fe-p-02.png" alt="Portfolio Page">
+								<div class="project-links">
+									<ul class="list-unstyled list-inline">
+										<li class="list-inline-item m-auto">
+											<a href="https://codepen.io/febrero/full/Ppxwqa/" target="_blank" class='btn btn-action btn-full'>
+                                            <i class="fab fa-codepen fa-fw"></i> Demo
+                                            </a>
+										</li>
+										<li class="list-inline-item">
+											<a href="https://www.freecodecamp.org/febreroinfo" target="_blank" class='btn btn-action btn-full'>
+                                            <i class="fab fa-github fa-fw"></i> Code
+                                            </a>
+										</li>
+									</ul>
+								</div>
+								<p>This project is the second challenge that was provided during the the Free Code Camp Frond-End Development curriculum.</p>
+								<div class="user-story">
+									<ol class="text-justify">
+										<li>
+											<p><strong>Objective:</strong> Build a <a href="https://codepen.io/" target="_blank">CodePen.io</a> app that is functionally similar to this: <a href="https://codepen.io/FreeCodeCamp/full/YqLyXB/" target="_blank" class="wrap">https://codepen.io/FreeCodeCamp/full/YqLyXB/</a>.</p>
+										</li>
+										<li>
+											<p>Fulfill the below <a href="https://en.wikipedia.org/wiki/User_story" target="_blank">user stories</a>. Use whichever libraries you need. Give it your own personal style.</p>
+										</li>
+										<li>
+											<p><strong>User Story:</strong> I can access all of the portfolio webpage's content just by scrolling.</p>
+										</li>
+										<li>
+											<p><strong>User Story:</strong> I can click different buttons that will take me to the portfolio creator's different social media pages.</p>
+										</li>
+										<li>
+											<p><strong>User Story:</strong> I can see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)</p>
+										</li>
+										<li>
+											<p><strong>User Story:</strong> I navigate to different sections of the webpage by clicking buttons in the navigation.</p>
+										</li>
+										<li>
+											<p>Don't worry if you don't have anything to showcase on your portfolio yet - you will build several apps on the next few CodePen challenges, and can come back and update your portfolio later.</p>
+										</li>
+										<li>
+											<p>There are many great portfolio templates out there already. However, you should consider building your portfolio page as much as you can from the ground up. Using Bootstrap can help make this process much easier for you.</p>
+										</li>
+										<li>
+											<p>Note that CodePen.io overrides the Window.open() function, so if you want to open windows using jQuery, you will need to target invisible anchor elements like this one: <code>&lt;a target='_blank'&gt;</code>.</p>
+										</li>
+										<li>
+											<p>Remember to use <a href="//forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514" target="_blank">Read-Search-Ask</a> if you get stuck.</p>
+										</li>
+										<li>
+											<p>When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.</p>
+										</li>
+										<li>
+											<p>You can get feedback on your project by sharing it with your friends on Facebook.</p>
+										</li>
+									</ol>
+								</div>
+								<div>
+									<p><strong>Want to know more?</strong><a href="https://www.freecodecamp.org/challenges/build-a-personal-portfolio-webpage" target="_blank"> Click here to read more...</a></p>
+									<div>
+										<button type="button" class="btn btn-action" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./vendor/popper/popper.min.js"></script>
+	<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- ScrollRevealJS -->
+	<script src="./vendor/scrollreveal/dist/scrollreveal.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="./js/portfolio.min.js"></script>
+
+</body>
+
+</html>
